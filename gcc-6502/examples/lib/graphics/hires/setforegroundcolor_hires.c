@@ -1,0 +1,12 @@
+#include "hires.h"
+
+
+/**
+ * Set the foreground color.
+ *
+ * @param color The new foreground color.
+ */
+void setForegroundColor_hires( unsigned char color) {
+
+  foreground_hires = color;
+}

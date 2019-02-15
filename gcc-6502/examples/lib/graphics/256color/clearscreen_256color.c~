@@ -1,0 +1,17 @@
+#include "256color.h"
+
+
+/**
+ * Just clear the screen.
+ */
+void clearscreen_256color( void) {
+
+  unsigned char zero = 0;
+
+  // Just fill the screenbuffer with 0.
+  copy2screen( (unsigned long)(unsigned int)&zero
+	       , screenbuffer_addy
+	       , 0
+	       , 1
+	       , 64000U);
+}

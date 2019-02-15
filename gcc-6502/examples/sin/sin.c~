@@ -1,0 +1,23 @@
+// Test app for graphics mode
+
+#include "graphics.h"
+#include "math.h"
+
+int main( int argc, char **argv) {
+
+  grafmode( GRAFMODE_320_200_2);
+
+  int maxX = getMaxX();
+  int maxY = getMaxY();
+  int y;
+  
+  for( int x = 0; x < maxX; ++x) {
+
+    y = 199 - 100 * sin( 2 * PI * x / 320.0);
+
+    plot( x, y, 1);
+  }
+
+
+  textmode();
+}

@@ -1,0 +1,11 @@
+/**
+ * Test of gcc modulo calculation.
+ */
+int main( int argc, char **argv) {
+
+  int a = 7;
+  int b = 3;
+  int c = a % b;
+
+  printf( "c is %d\n", c);
+}
